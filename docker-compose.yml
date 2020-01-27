@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  springboot:
+    build: .
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/starwarsapi
+    container_name: restapi-starwars-app
+    ports:
+      - 8182:8080
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    networks:
+      - spring-mongo-net
+  mongo:
+    image: mongo:latest
+    container_name: restapi-starwars-mongodb
+    ports:
+      - 27017:27017
+    command: mongod --logpath=/dev/null # --quiet
+    networks:
+      - spring-mongo-net
+networks:
+  spring-mongo-net:
+    driver: bridge
