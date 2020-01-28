@@ -13,7 +13,7 @@ RestAPI criada para fazer o cadastro dos planetas do StarWars. Foi utilizado jav
     ```
 - Após este processo, a API poderá ser testada no link ```http://localhost:8182/api/planetas``` para exibir os dados da API interna ou no link ```http://localhost:8182/swapi/planetas/?pagina=1``` para exibir os dados da API externa.
 - Para testes de requisições na API, pode-se utilizar o [Postman](https://www.getpostman.com/downloads/).
-- Para encerrar a aplicação utilize o comando ```docker-compose down```
+- Para encerrar a aplicação utilize o comando ```docker-compose down```.
 
 ## Links para requisições na API
 - GET: ```http://localhost:8182/api/planetas``` (Retorna todos os planetas)
