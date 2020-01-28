@@ -2,17 +2,18 @@
 RestAPI criada para fazer o cadastro dos planetas do StarWars. Foi utilizado java 8, spring boot, mongodb e docker em seu desenvolvimento. Além disso, foi consumida a [API do StarWars](https://swapi.co/) para obter a informação da quantidade de vezes que o planeta apareceu nos filmes da franquia.
 
 ## Procedimentos para execução
-- Baixe e instale o [Docker](https://docs.docker.com/install/) e o [Git](https://git-scm.com/downloads)
-- Após o docker e o git estarem instalados, clone o projeto com o comando ```git clone https://github.com/juliocesark/RestApi-StarWars-App.git```
-- Acesse o diretório do projeto clonado
-- Execute o comando ```docker-compose up -d``` para fazer com que o docker inicie os serviços do projeto em segundo plano.
+- Baixe e instale o [Docker](https://docs.docker.com/install/) e o [Git](https://git-scm.com/downloads).
+- Após a instalação do docker e do git, clone o projeto com o comando ```git clone https://github.com/juliocesark/RestApi-StarWars-App.git```.
+- Acesse o diretório do projeto clonado.
+- Execute o comando ```docker-compose up -d``` para que o docker inicie os serviços do projeto em segundo plano.
 - Em seguida utilize o comando ```docker logs -f restapi-starwars-app``` para verificar a inicialização do projeto. Assim que estiver com a mensagem abaixo, poderá fazer o teste da aplicação. Utilize ```CTRL + C``` para sair do log.
     ```
     : Tomcat started on port(s): 8080 (http) with context path ''
     : Started RestApiStarWarsAppApplication in 18.226 seconds (JVM running for 24.561)
     ```
-- Após este processo, a API poderá ser testada no link: ```http://localhost:8182/api/planetas``` para exibir os dados da API interna ou no link: ```http://localhost:8182/swapi/planetas/?pagina=1``` para exibir os dados da API externa
-- Para testes de requisições na API, pode-se utilizar o [Postman](https://www.getpostman.com/downloads/)
+- Após este processo, a API poderá ser testada no link ```http://localhost:8182/api/planetas``` para exibir os dados da API interna ou no link ```http://localhost:8182/swapi/planetas/?pagina=1``` para exibir os dados da API externa.
+- Para testes de requisições na API, pode-se utilizar o [Postman](https://www.getpostman.com/downloads/).
+- Para encerrar a aplicação utilize o comando ```docker-compose down```
 
 ## Links para requisições na API
 - GET: ```http://localhost:8182/api/planetas``` (Retorna todos os planetas)
