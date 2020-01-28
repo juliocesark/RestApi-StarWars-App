@@ -288,3 +288,5 @@ RestAPI criada para fazer o cadastro dos planetas do StarWars. Foi utilizado jav
 ```
 - DELETE: ```http://localhost:8182/api/planetas/{id}``` (Deleta o planeta pertencente ao id informado)
     - Exemplo:  ```http://localhost:8182/api/planetas/5e2f6c649a90812d6c324407```
+
+### May the force be with you!
