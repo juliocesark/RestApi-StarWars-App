@@ -1,5 +1,5 @@
 # RestAPI StarWars
-RestAPI criada para fazer o cadastro dos planetas do StarWars. Foi utilizado java 8, spring boot, mongodb e docker em seu desenvolvimento. Além disso, foi consumida a [API do StarWars](https://swapi.co/) para obter a informação da quantidade de vezes que o planeta apareceu nos filmes da franquia.
+RestAPI criada para fazer o cadastro dos planetas do StarWars. Foi utilizado java 8, spring boot, mongodb e docker em seu desenvolvimento. Além disso, foi consumida a [API do StarWars](https://swapi.dev/) para obter a informação da quantidade de vezes que o planeta apareceu nos filmes da franquia.
 
 ## Procedimentos para execução
 - Baixe e instale o [Docker](https://docs.docker.com/install/) e o [Git](https://git-scm.com/downloads).
