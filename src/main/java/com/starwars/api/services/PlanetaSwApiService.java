@@ -24,7 +24,7 @@ import com.starwars.api.model.PlanetaSwApiFilms;
 /**
  * 
  * Serviço para API externa
- * do StarWars -> https://swapi.co/api/
+ * do StarWars -> https://swapi.dev
  * 
  **/
 

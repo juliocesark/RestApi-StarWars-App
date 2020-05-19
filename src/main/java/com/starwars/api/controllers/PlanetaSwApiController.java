@@ -15,7 +15,7 @@ import com.starwars.api.services.PlanetaSwApiService;
 /**
  * 
  * Rest para consumo da API externa
- * do StarWars -> https://swapi.co/api/
+ * do StarWars -> https://swapi.dev
  *
  **/
 
