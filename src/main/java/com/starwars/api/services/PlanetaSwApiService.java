@@ -51,7 +51,7 @@ public class PlanetaSwApiService {
 	@Cacheable("planetasPorPagina")
 	public Map<String, Object> listarPorPagina(int pagina) {
 		 UriComponents swApiUrl = UriComponentsBuilder.newInstance()
-			      .scheme("https").host("swapi.co")
+			      .scheme("https").host("swapi.dev")
 			      .path("/api/planets/").query("page={pagina}").buildAndExpand(pagina);
 		 
 		ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
@@ -64,7 +64,7 @@ public class PlanetaSwApiService {
 	@Cacheable("planetasPorId")
 	public Map<String, Object> listarPorId(int id) {
 		 UriComponents swApiUrl = UriComponentsBuilder.newInstance()
-			      .scheme("https").host("swapi.co")
+			      .scheme("https").host("swapi.dev")
 			      .path("/api/planets/{id}").buildAndExpand(id);
 		 
 		ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
@@ -76,7 +76,7 @@ public class PlanetaSwApiService {
 	
 	public PlanetaSwApiFilms listarPorNome(String nome) {
 		UriComponents swApiUrl = UriComponentsBuilder.newInstance()
-			      .scheme("https").host("swapi.co")
+			      .scheme("https").host("swapi.dev")
 			      .path("/api/planets/").query("search={nome}").buildAndExpand(nome);
 	
 		PlanetaSwApiFilms response = restTemplate.getForObject(swApiUrl.toString(), PlanetaSwApiFilms.class);
